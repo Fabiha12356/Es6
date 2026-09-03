@@ -1248,6 +1248,79 @@ counter(); // 3
  let result = take();
  result();
 
+// NUmbers Getting IN closure
+
+let ParentNo = () =>{
+let num1 = 0;
+console.log(num1);
+
+ return function outer (){
+  let num1 = 1 ;
+    console.log(num1)
+   return  function inner (){
+      let num1 = 2 ;
+      console.log(num1);
+    return   function inermost (){
+        let num1 = 3
+        console.log(3)
+      }
+      inermost()
+    }
+    inner()
+}
+ outer()
+}
+
+console.log(ParentNo());
+
+let outcome = ParentNo();
+outcome()()();
+
+
+
+// Destructuring:-
+
+// Array
+
+let Colors = ["red","blue","pink"];
+
+let [color1,color2,color3] = Colors
+
+console.log(color1)
+console.log(color2)
+console.log(color3)
+
+
+let Rangs = ["red","blue", ["purple","mehroon"],"pink"];
+let [color4,color5,[color10, color12], color7] = Rangs
+
+console.log(color4)
+console.log(color5)
+console.log(color10)
+console.log(color12)
+console.log(color7)
+
+
+
+//Objects:-
+
+let MeraObj = {
+  name0 : "fabiha",
+  f_nmae : "sohail",
+  Class : 11,
+  hobby : ()=>{
+    console.log("sleeping!")
+  },
+  ObtherObj : {
+ address : "5/f new karachi",
+ city : "Karachi"
+  }
+}
+
+
+let {name0:myName0 , f_nmae , Class ,   ObtherObj:{address , city} } = MeraObj
+
+console.log(myName0 , f_nmae , Class ,  address , city );
 
 
 
