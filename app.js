@@ -1,0 +1,1183 @@
+//SET TIME OUT :-
+ 
+
+// let greet = (say)=>{
+//  setTimeout(()=> {
+//    console.log(say);
+// },1000)
+// }
+
+// greet("hello");
+
+
+
+//SET TIME INTERVAL :-
+
+// setInterval(()=>{
+//     let Add = (a,b) =>{
+//         console.log(a+b)
+//     }
+//     Add(1,2)
+// },1000);
+
+// let IntervalID = setInterval(()=>{
+//    console.log(1+8)
+//    clearInterval(IntervalID);
+// },2000)
+
+// console.log(IntervalID);
+
+
+//logic bulid :-
+
+let count = 0 ;
+
+// let IntervalId = setInterval(() => {
+//     count++
+//     console.log(count);
+
+//     if(count === 10){
+//         clearInterval(IntervalId);
+//     }
+// }, 1000);
+
+
+
+// setTimeout(()=>{
+//     console.log("Game started!")
+//  let Stop = setInterval(()=>{
+// count++
+// console.log(count)
+
+// if(count === 5){
+//     clearInterval(Stop);
+//     setTimeout(()=>{
+// console.log("Game Over !")
+//     },2000)
+// }
+//     },1000)
+// },2000);
+
+
+
+// let Sub = 11;
+
+// setTimeout(()=>{
+// console.log("Time Start Now !")
+// let SubId = setInterval(()=>{
+// Sub--;
+// console.log(Sub);
+// if(Sub === 0){
+//     clearInterval(SubId);
+//     setTimeout(() =>{
+//         console.log("Time's Up!")
+//     },2000);
+// }
+
+// },1000)
+// },2000)
+
+
+
+//ternary operator :-
+
+// let user = +prompt("How Old Are You ?");
+
+
+// let allow = user > 18 ? "Go Somewhere" : user < 18 ? "Don't Go Anywhere" : "Just Wait !"
+
+// console.log(allow);
+
+// alert(`${allow}`);
+
+
+
+
+// let Ask = +prompt("Enter Any Number ?");
+
+// let gettoKnow =  Ask % 2 === 0 ?  "Even Number !" : "Odd Number !"
+
+// console.log(gettoKnow);
+
+
+
+//Nullish operator :-
+
+//objects :-
+
+// let person = {
+//     name : "fabiha",
+//     class: 11,
+//     hobbies : (hob1,hob2,hob3)=>{
+// console.log(hob1,hob2,hob3);
+// return  " fabiha";
+//     },
+//     otherPerson : {
+// street : "2 gali",
+// area : "5/f"
+//     },
+// }
+//  person.hobbies("sleeping" ,"eating","dancing")
+
+// console.log(person.hobbies.city);
+
+// console.log("hello!");
+
+
+// console.log(person ?. hobbies() )
+// console.log(person ?. otherPerson ?. street ?. area  ?. city);
+// console.log(person.otherPerson.street.area.city);
+
+// console.log("hyyyyy");
+
+
+// console.log(2**2);
+
+// let user = +prompt("Enter any number");
+
+// let num = 2 ; 
+
+// console.log(Math.pow(num,3));
+
+// document.write(`Square : ${(Math.pow(user,2))}`)
+// document.write("<br />");
+// document.write("<br />");
+
+// document.write(`Cube: ${(Math.pow(user,3))}`)
+
+
+
+//Rest Parameter :-
+// let total ;
+
+// let Numbers = (...num) =>{
+//     total = num ;
+//     for(let get of total){
+//         console.log(get);
+//     }
+
+// }
+
+// Numbers(1,2,3,4,5,6,7,8,9,10);
+
+// let fruits = ["apple","mango","banana","oranage","grapes"];
+
+// for(let fruit of fruits){
+//     console.log(fruit);
+// }
+
+
+
+// for(let phall in fruits){
+//     console.log(phall)
+// }
+
+// //Spread Operator :-
+
+// let arr1 = [10,20,30,40];
+// let arr2 = [50,60,70,80,90];
+
+
+// let Result = [...arr1,...arr2];
+
+
+// for(let ouput in Result){
+//     console.log(Result[ouput]);
+// }
+
+// console.log(Result);
+
+
+// let person = {
+//     name : "fabiha",
+//     class : 11,
+//     course : "web",
+// }
+
+// console.log(person)
+
+// for(let item in person){
+//     console.log(item);
+// }
+
+
+//high order function :-
+
+//  let duas = () =>{
+//     console.log("duaa")
+//   }
+
+// let  friends = (best) =>{
+// // console.log(best)
+//  return best();
+// return "fabiha";
+// console.log(duas);
+// }
+
+// console.log(friends(  girl = (word)=>{console.log("areeba")} ));
+
+
+
+// function greet() {
+//     console.log("Hello");
+// }
+
+// let myFunction = greet;
+
+// myFunction(); // Hello
+ 
+// function greet(word) {
+//     // word()
+//     console.log(word);
+// }
+
+
+
+// greet(function runFunction() {
+//  console.log("greet");
+// })
+
+// console.log( greet(function runFunction() {
+//  console.log("greet");
+// }))
+// console.log(greet( function runFunction() {
+//  console.log("greet");
+// }));
+
+
+
+//logic :-
+
+
+// let sayHello = ( word) =>{
+//     console.log(` hello ${word}`)
+// }
+
+
+// let myFunc = sayHello;
+
+// myFunc("fabiha");
+
+
+// let operation;
+
+// let Add = (a , b) =>{
+//     console.log(a + b)
+// }
+
+// let sub = (a,b) =>{
+//       console.log(a - b)
+// }
+// //add ;
+
+//  operation = Add;
+// operation(2,6)
+
+// //sub;
+// operation = sub;
+// operation(3,9)
+
+
+
+//higher order functon logic :-
+
+
+// function greet() {
+//     console.log("Hello");
+// }
+
+// function execute(fn) {
+//     fn();
+// }
+// execute(greet);
+
+
+// function add(a, b) {
+//     return a + b;
+// }
+
+// function multiply(a, b) {
+//     return a * b;
+// }
+
+
+// console.log(add(2,4))
+// console.log(multiply(5,3))
+
+
+
+
+//iterators ;
+
+// let numbers = [1,2,3,4,5];
+
+// console.log(numbers);
+
+
+// let  control = numbers[Symbol.iterator]();
+
+
+// console.log(control.next());
+// console.log(control.next());
+// console.log(control.next());
+// console.log(control.next());
+// console.log(control.next());
+// console.log(control.next());
+
+
+//generators :-
+
+
+// fuction declar
+
+// function greet (){
+//     console.log("hello");
+// }
+// greet()
+
+//funtion expreseeion 
+
+// let say = function (){
+//     console.log("heloo!")
+// }
+// say()
+
+//arrow fuction ;-
+
+
+
+// let kuhbolo = () =>{
+//     console.log("hyy")
+// }
+
+// kuhbolo()
+
+
+// //genertor :-
+
+// function* greet0 (){
+//     yield " hello";
+//     console.log("hyy");
+//     yield "bye";
+//     console.log("salam");
+//     yield "random";
+// }
+
+// let control0 = greet0();
+
+// console.log(control0);
+
+
+// console.log(control0.next());
+// console.log(control0.next());
+// console.log(control0.next());
+// console.log(control0.next());
+
+
+//MAP:-
+
+
+// let student = new Map();
+
+// //set
+// student.set("name" , "fabiha");
+// student.set("age" , 17);
+// student.set("course" , "web");
+
+
+// console.log(student);
+
+
+
+//get
+// console.log(student.get("name"));
+
+
+// //loop for of 
+// for(const [key,value] of student){
+//     console.log( typeof key,value);
+// }
+
+
+
+//objects :-
+
+// let personInfo = {
+//     name : "fabiha",
+//     class : 11,
+// }
+
+// console.log( typeof personInfo.name);
+// console.log( typeof personInfo.class);
+
+// console.log(personInfo);
+//map :-
+
+// let studentinfo = new Map();
+// //set
+// studentinfo.set("name" , "fabiha")
+// studentinfo.set( "age", 17)
+// studentinfo.set( "class", 11)
+
+// //has
+// console.log(studentinfo.has("class"));
+// console.log(studentinfo)
+// console.log(studentinfo.size)
+
+
+// //delete
+// studentinfo.delete("age");
+// console.log(studentinfo)
+
+
+// //size :-
+// console.log(studentinfo.size)
+
+
+// //loop for of 
+// for(const [key,value] of studentinfo){
+//     console.log(  key,value);
+// }
+
+
+//closur :-
+
+
+// let main_inner = (myname) =>{
+//  return function inner (){
+//     console.log(`hello ${myname}`)
+    
+// }
+// inner();
+// }
+
+// let Result0 = main_inner("fabiha")
+// Result0();
+
+
+
+//higher order function :-
+
+
+// let outer = (exceptnextouter)=>{
+//     console.log("ye outer hai abhee")
+//     exceptnextouter();
+//      return function iner (ahm){
+//         console.log("iner fuction !");
+//         ahm();
+//         return function(anymous){
+//             console.log("return fuction");
+//             anymous();
+//         }
+//     }
+// }
+
+
+// let nextouter = () =>{
+//     console.log("ye next outer hai bahi !")
+// }
+
+
+// let otherfuc = () =>{
+//     console.log("other fucntion !");
+// }
+
+
+// outer(nextouter)
+
+// let Result = outer(nextouter)
+// console.log(Result(otherfuc));
+
+// console.log(outer(nextouter));
+
+
+// let output = Result(otherfuc);
+// output( function(){
+//     console.log("anoumys function")
+// })
+
+
+
+//lexical scope :-
+
+// let code = 0 ;
+
+// function hmm (){
+//     console.log(code);
+//      code = 1;
+//      function hmm1(){
+//         console.log(code);
+//      }
+//      function hmm2(){
+//         console.log(code)
+//      }
+// hmm1()
+// hmm2()
+// }
+
+// hmm();
+
+
+
+
+
+// let arr1 = ["item1" , "item2" , "item3"];
+//  let arr2 = arr1;
+
+// console.log(arr1)
+// console.log(arr2)
+
+
+
+// console.log(arr1 === arr2) //true
+
+// arr2 = [...arr1];
+
+// console.log(arr1 === arr2) //false 
+
+
+
+
+
+
+//primitive data type :-
+
+let num = 5 ;
+
+let num2 = num ;
+
+// console.log(num)
+// console.log(num2)
+// console.log(num === num2)
+
+// console.log("after reisgn")
+// num = 7;
+// console.log(num)
+// console.log(num2)
+
+
+num2 = 10
+
+let num3 = num2;
+
+// console.log(num2 === num3);
+
+// num2 = 11;
+
+// console.log(num2 === num3);
+
+
+//non - primitive datatype :-
+
+// console.log("Arrays")
+
+// let arr3 = ["fabiha" , "areeba"];
+
+// let arr4 = arr3
+
+// console.log(arr3 === arr4);
+
+
+// arr4.push("zainab");
+
+// console.log(arr3);
+// console.log(arr4);
+
+//methods:-
+// let arr5 = [...arr3];  //spread operator
+// arr5 = [].concat(arr3) //conact method
+// arr5 = arr3.slice(0)    //slice method
+
+// let arr5 = [...arr3]; 
+
+
+// console.log(arr3 === arr5);
+
+
+// arr3.push("hoorain");
+
+// console.log(arr3);
+// console.log(arr5);
+
+
+//object :-
+
+// console.log("objects")
+
+let Myinfo = {
+    name : "fabiha",
+    city : "karachi",
+}
+
+// let otherinfo = Myinfo;
+
+// console.log(Myinfo === otherinfo);
+
+
+// otherinfo = {... Myinfo};
+ 
+
+// console.log(Myinfo === otherinfo);
+
+
+//hosting:-
+
+// console.log("hosting")
+// console.log(value)
+// var value = 15;
+
+//let:-
+
+// console.log("let")
+// console.log(value1)
+// let value1 = 15;
+
+//const
+// console.log("const")
+// console.log(value2)
+// let value2 = 15;
+
+// mygreet()
+
+// function mygreet(){
+//     console.log("hello");
+// }
+
+// console.log(you);
+// // you() //you is not a function :-
+
+// var you = function (){
+//     console.log("hello");
+// }
+
+
+
+
+//array method
+
+//some:-
+
+let Numbers = [22,55,20,17,27,30];
+
+ const values = Numbers.some((num)=>{
+ return num > 18
+})
+
+
+console.log( values);
+
+
+//every:-
+
+let arr = [1,3 ,2,3,4]
+
+const All =  arr.every((oops) =>{
+    return  oops  < 5 
+})
+
+console.log(All);
+
+
+
+//find :-
+
+const dhoodna = arr.find((num) =>{
+ return num < 2
+})
+
+
+console.log(dhoodna);
+
+
+//reduce :-
+// let arr = [1,3 ,2,3,4];
+
+let sum = 0 
+
+ let total = arr.reduce((accumlator , currentValue)=>{
+     return    sum = sum + currentValue
+},0)
+
+
+console.log(total)
+
+
+//sort :-
+
+let fruit= ["apple" , "mago" , "banana" , "orange" , "grapes"];
+
+console.log(fruit.sort());
+
+let counting = [9,7,2,10,16,5,3];   
+
+
+
+
+//without call back
+// console.log(counting.sort());   //10,16,2,,3,5,7,9
+
+
+
+//with cALL BACK 
+
+// console.log(counting.sort((a,b)=>{      //2,3,5,7,9,10,16
+//  return  a - b;
+// })
+// );
+
+
+
+
+//map:-
+
+// let counting = [9,7,2,10,16,5,3];   
+let aarry= [10,20,30,40,50];
+
+const  count11 = aarry.map(( word)=>{
+    return word + 10;
+})
+
+console.log(count11);
+
+
+//filter :-
+
+
+console.log(aarry.filter((num) =>{
+  return  num < 40
+}))
+
+
+
+//fill :-
+
+console.log(aarry.fill(5,2,3))
+
+
+let convert  = [10,40,3,7,5,3,4,8];
+
+let logic = convert.filter((num)=>{
+  return  num < 10
+})
+
+
+console.log(logic);
+
+
+let filling = logic.map((num) =>{
+  return num *2
+})
+
+console.log(filling);
+
+console.log(filling.fill(12,3,4));
+
+//includes:-
+
+// let fruit= ["apple" , "mago" , "banana" , "orange" , "grapes"];
+
+
+console.log(fruit.includes("orange"));
+
+
+///modules :-
+
+
+import { greet } from "./file2.js";
+
+import person  from "./file3.js";
+
+console.log(greet("fabihaSohail"));
+
+console.log(person);
+
+
+import ahnm from "./file2.js";
+
+console.log(ahnm);
+
+
+import data, { name } from  "./file1.js";
+
+// console.log(data)
+
+console.log(data.number);
+console.log(data.friends);
+
+
+
+
+//destructing:-
+// let {numbers , friends} = data
+// console.log(data.number);
+// console.log(data.friends);
+
+
+
+function StudentInfo (anyname,anyage,anyclass){
+    this.name = anyname;
+    this.age = anyage;
+    this.class = anyclass;
+};
+
+// console.log(new StudentInfo().class);
+// console.log(new StudentInfo().name);
+// console.log(new StudentInfo().age);
+
+
+let StudentInfo1 =  new StudentInfo("fabiha",17,11);
+let StudentInfo2 = new StudentInfo("areeba",17,11)
+
+console.log(StudentInfo2);
+console.log(StudentInfo1);
+
+
+
+// oops
+
+// Encapsulation:_
+
+
+class Info{
+    constructor(anyname,anyclass){
+    this.name =  anyname;
+    this.class = anyclass;
+    }
+
+    define(){
+       return  `My name is ${this.name} and i study in ${this.class}`
+    }
+
+}
+
+let Myself = new Info("fabiha" , 11);
+console.log(Myself);
+console.log( Myself.define());
+
+
+
+
+//Inheritance:-
+
+class Aboutme extends Info{
+    constructor(anyname,anyclass,anycity){
+       super(anyname,anyclass);
+       this.city = anycity;
+    }
+
+    define(){
+        console.log(`${Myself.define()} and i live in this ${this.city}`)
+    }
+}
+
+
+
+let me = new Aboutme("fabiha" , 11 , "karachi")
+console.log(me);
+me.define()
+
+
+console.log(me);
+
+
+
+
+
+
+
+
+
+
+
+
+//encapsulation:-
+
+let stu1 = new Info("areeba" , 12);
+console.log(stu1)
+console.log(stu1.define());
+
+//inheritance:-
+
+let stu1info = new Aboutme("areeba" , 12 , "karachi")
+console.log(stu1info);
+stu1info.define()
+
+
+let stu2 = new Info("hamna" , 11);
+console.log(stu2)
+console.log(stu2.define());
+
+//inheritance
+let stu2info = new Aboutme("hamna" , 11,"queeta");
+console.log(stu2info)
+stu1info.define()
+
+
+let stu3 = new Info("hoorain" , 12);
+console.log(stu3)
+console.log(stu3.define());
+
+//inheritance
+let stu3info = new Aboutme("hoorain" , 12,"queeta");
+console.log(stu3info)
+stu3info.define()
+
+
+let stu4= new Info("rifza" , 12);
+console.log(stu4)
+console.log(stu4.define());
+
+
+//inheritance
+let stu4info = new Aboutme("rifza" , 12,"queeta");
+console.log(stu4info)
+stu4info.define()
+
+
+
+//abstraction 
+class Car {
+  startEngine() {
+    console.log("Engine started");
+  }
+
+  drive() {
+    console.log("Car is moving");
+  }
+}
+
+const car = new Car();
+car.drive();
+
+
+
+
+class Ages {
+   constructor(studentAGe){
+this.studentAGe = studentAGe;
+   }
+
+   agefounder(yourname,yourcity){
+    console.log(`my name is ${yourname} i live in this ${yourcity} `)
+   }
+}
+let umar = new Ages(17);
+console.log(umar);
+umar.agefounder("fabiha", "karachi");
+
+
+
+
+//encapsulation:-
+class person10{
+  constructor(myname){
+this.myname = myname;
+  }
+  define(){
+console.log(this.myname);
+  }
+
+}
+
+let obj = new person10("fabiha");
+console.log(obj);
+obj.define();
+
+
+//inheritance:-
+
+class inhert extends person10{
+    constructor(myname,myage){
+super(myname);
+this.myage = myage;
+  }
+  define(){
+console.log(this.myage);
+  }
+}
+
+let inheritance = new inhert("fabiha",17);
+console.log(inheritance);
+inheritance.define();
+
+//absraction:-
+class hide {
+  constructor(){
+console.log("engine started")
+  }
+  define(){
+    console.log("car is moving !")
+  }
+}
+
+let absraction = new hide()
+absraction.define()
+
+
+
+class CoffeeMachine {
+
+  makeCoffee() {
+    this.boilWater();
+    this.addCoffee();
+    this.addMilk();
+    this.serveCoffee();
+  }
+
+  boilWater() {
+    console.log("Boiling Water");
+  }
+
+  addCoffee() {
+    console.log("Adding Coffee");
+  }
+
+  addMilk() {
+    console.log("Adding Milk");
+  }
+
+  serveCoffee() {
+    console.log("Coffee Ready");
+  }
+
+}
+
+let coffee = new CoffeeMachine();
+
+coffee.makeCoffee();
+
+
+class BankAccount {
+
+  #balance = 5000;   //private
+
+  checkBalance() {
+    console.log(this.#balance);
+  }
+
+}
+
+let user = new BankAccount();
+user.checkBalance();
+
+
+class BankAccount0 {
+
+  #balance = 10000;
+
+  deposit(amount) {
+    this.#balance += amount;
+  }
+
+  getBalance() {
+    return this.#balance;
+  }
+
+}
+
+let user10 = new BankAccount0();
+
+user10.deposit(500);
+
+console.log(user10.getBalance());
+
+
+// let asked = prompt("what your name ?")
+// let aske0 = prompt("how old are you ?")
+// let aske1 = prompt("In which class do you study ?");
+
+
+// class hide0 {
+  
+//   #age = aske0;
+//   constructor(myname , myage , myclass){
+// this.name = myname;
+// this.#age = myage;
+// this.class = myclass
+//   }
+//   // passedyears(){        if you want to know
+//   //   return this.#age;
+//   // }
+// };
+
+// let hidden = new hide0(asked,aske0,aske1);
+// console.log(hidden);
+// console.log(hidden.name);
+// console.log(hidden.class);
+
+// console.log(hidden.#age); //"private field"
+
+// console.log(hidden.passedyears()); //return
+
+
+//without prompt:-
+
+// class hide0 {
+//   #age;
+//   constructor(myname , myage , myclass){
+// this.name = myname;
+// this.#age = myage;
+// this.class = myclass
+//   }
+// };
+
+// let hidden = new hide0("fabiha",17,12);
+// console.log(hidden.#age);
+// console.log(hidden.name);
+// console.log(hidden.class);
+
+
+//polymorphism:-
+
+class Animal {
+  sound() {
+    console.log("Animal sound");
+  }
+}
+
+class Dog extends Animal {
+  sound() {
+    console.log("Bark");
+  }
+}
+
+class Cat extends Animal {
+  sound() {
+    console.log("Meow");
+  }
+}
+
+const dog = new Dog();
+const cat = new Cat();
+
+dog.sound(); // Bark
+cat.sound(); // Meow
+
+
+
+class her {
+  constructor(hername){
+this.she = hername
+console.log(hername);
+  }
+}
+ new her("fabiha");
+
+
+ class him {
+  constructor(himname){
+this.he = himname
+console.log(himname);
+  }
+}
+
+new him("rayyan");
+
+
+
+
+
+
+
+
+
