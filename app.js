@@ -1338,3 +1338,16 @@ let dislikes = (first1, ...first0  ) =>{
   console.log(first1 , first0)
 }
 dislikes("loveing" , "caring" , "attaching");
+
+// Spread Operator:-
+
+let myArray = ["f", "A" ,"B" , "I" , "H" ,"A"];
+console.log(myArray);
+
+
+myArray.push("hhha");
+let OtherArray = ["b" , "i" , "s", [...myArray]];
+console.log(OtherArray);
+console.log("myArray" , myArray)
+console.log(OtherArray);
+
