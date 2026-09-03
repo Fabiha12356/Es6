@@ -1173,9 +1173,80 @@ console.log(himname);
 
 new him("rayyan");
 
+// varibale SCope:-
+
+
+var myName = "fabiha!";
+
+let person0 = {
+  name : `${myName}`
+}
+
+console.log(person0.name);
+
+
+{
+  var numBers = 123
+  let numbErs = 456
+  const NumbeRs = 789
+}
+
+console.log(numBers);
+
+
+let CALL = () =>{
+var hello = "hy";
+}
+
+CALL()
+
+// console.log(hello);
 
 
 
+//Closure :-
+
+
+
+function outer() {
+  let count = 0;
+
+  function inner() {
+    count++;
+    console.log(count);
+  }
+
+  return inner;
+}
+
+const counter = outer();
+
+counter(); // 1
+counter(); // 2
+counter(); // 3
+
+
+ let take = () =>{
+  let greet = "hello";
+  console.log(greet);
+
+  return  function get (){
+    let greet = "hy"
+    console.log(greet);
+     function AgainGet (){
+    // let greet = "Salam"
+    console.log(greet);
+  }
+  AgainGet();
+  }
+  get();
+
+ }
+
+ take()
+//  console.log(take());
+ let result = take();
+ result();
 
 
 
