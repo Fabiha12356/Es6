@@ -1324,4 +1324,17 @@ console.log(myName0 , f_nmae , Class ,  address , city );
 
 
 
+//Default Parameter:-
 
+let likes = (greet , helo="hyyy" , jee="ahmm") =>{
+  console.log(greet , helo , jee)
+}
+
+likes("Diamond" , "byeeeeeee" ,  "okkk" );
+
+//Rest Parameter
+
+let dislikes = (first1, ...first0  ) =>{
+  console.log(first1 , first0)
+}
+dislikes("loveing" , "caring" , "attaching");
