@@ -5,25 +5,25 @@
 
 // console.log(name);
 
-import{name , num , value} from "./file1.js";
+// import{name , num , value} from "./file1.js";
 
-console.log(name)
-console.log(num)
-console.log(value)
-
-
-   export let greet = (word) =>{
-    console.log(word);
-
-    return "fabiha";
-}
+// console.log(name)
+// console.log(num)
+// console.log(value)
 
 
-import person from "./file3.js";
-console.log(person)
+//    export let greet = (word) =>{
+//     console.log(word);
+
+//     return "fabiha";
+// }
+
+
+// import person from "./file3.js";
+// console.log(person)
 
 
 
-let ahnm = "yes";
+// let ahnm = "yes";
 
-export default ahnm
+// export default ahnm

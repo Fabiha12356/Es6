@@ -1393,3 +1393,17 @@ console.log(calling.next());
 
 
 
+//Modules:-
+
+import { MyFavName } from "./file1.js";
+console.log(MyFavName);
+
+
+import { book0 } from "./file1.js";
+console.log(book0);
+
+
+import{you, Me, And} from "./file1.js";
+console.log(you);
+console.log(Me)
+console.log(And);

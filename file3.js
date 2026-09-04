@@ -1,11 +1,11 @@
 //objects:-
 
-let person = {
-    name : "fabiha", 
-    class : 11,
-}
+// let person = {
+//     name : "fabiha", 
+//     class : 11,
+// }
 
-export default person 
+// export default person 
 
 
 

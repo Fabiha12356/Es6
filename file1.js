@@ -1,28 +1,41 @@
 //variables:-
 
-console.log("hello")
+// console.log("hello")
 
-let name = "fabiha"
- let num = 5;
-  let value = true;
-
-
-export {name,num,value};
+// let name = "fabiha"
+//  let num = 5;
+//   let value = true;
 
 
-import person from "./file3.js";
-
-console.log(person);
+// export {name,num,value};
 
 
-console.log("hello");
+// import person from "./file3.js";
+
+// console.log(person);
+
+
+// console.log("hello");
 
 
 
 
 // default
 
-let number = [1,2,3,4,5]
-let friends = ["f" , "A" ,"z" ,"b"];
+// let number = [1,2,3,4,5]
+// let friends = ["f" , "A" ,"z" ,"b"];
 
-export default {number,friends};
+// export default {number,friends};
+
+
+
+export let MyFavName = "fabiha";
+export let book0 = "Holy Quran";
+
+//dafult:-
+
+let you = "You";
+let Me = "Me";
+let And = "Us";
+ 
+export default {you, Me ,And};
