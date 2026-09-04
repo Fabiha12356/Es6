@@ -783,21 +783,21 @@ console.log(fruit.includes("orange"));
 ///modules :-
 
 
-import { greet } from "./file2.js";
+// import { greet } from "./file2.js";
 
-import person  from "./file3.js";
+// import person  from "./file3.js";
 
-console.log(greet("fabihaSohail"));
+// console.log(greet("fabihaSohail"));
 
-console.log(person);
-
-
-import ahnm from "./file2.js";
-
-console.log(ahnm);
+// console.log(person);
 
 
-import data, { name } from  "./file1.js";
+// import ahnm from "./file2.js";
+
+// console.log(ahnm);
+
+
+import data  from  "./file1.js";
 
 // console.log(data)
 
@@ -1403,7 +1403,15 @@ import { book0 } from "./file1.js";
 console.log(book0);
 
 
-import{you, Me, And} from "./file1.js";
-console.log(you);
-console.log(Me)
-console.log(And);
+import xyx from "./file1.js";
+console.log(xyx.you);
+console.log(xyx.Me)
+console.log(xyx.And);
+
+
+import {name , num12 , value} from "./file1.js"
+console.log(name)
+console.log(num12)
+console.log(value);
+
+

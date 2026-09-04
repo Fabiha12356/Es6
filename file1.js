@@ -2,12 +2,12 @@
 
 // console.log("hello")
 
-// let name = "fabiha"
-//  let num = 5;
-//   let value = true;
+let name = "fabiha"
+ let num12 = 5;
+  let value = true;
 
 
-// export {name,num,value};
+export {name,num12,value};
 
 
 // import person from "./file3.js";
