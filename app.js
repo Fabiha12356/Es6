@@ -1351,3 +1351,45 @@ console.log(OtherArray);
 console.log("myArray" , myArray)
 console.log(OtherArray);
 
+
+// Iterators & Generators :-
+//ARRAY
+
+//just one line:-
+let evenNo = [2,4,6,8,10][Symbol.iterator]();
+console.log(evenNo.next())
+console.log(evenNo.next())
+console.log(evenNo.next())
+console.log(evenNo.next())
+console.log(evenNo.next())
+
+
+//put in variable:-
+let selctNo = evenNo[Symbol.iterator]();
+console.log(selctNo.next());
+console.log(selctNo.next());
+console.log(selctNo.next());
+console.log(selctNo.next());
+console.log(selctNo.next());
+console.log(selctNo.next());
+
+
+// FUNCTION:-
+
+let anthm = function* (){
+  console.log("helo")
+   yield "hello";
+  let greet = "hy";
+  console.log(greet);
+   yield console.log("fabiha");
+}
+anthm();
+
+let calling = anthm()
+console.log(calling.next());
+console.log(calling.next());
+
+
+
+
+
