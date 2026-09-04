@@ -1415,3 +1415,28 @@ console.log(num12)
 console.log(value);
 
 
+//MAP:-
+let Girl = new Map;
+console.log(Girl)
+
+Girl.set("name" , "fabiha");
+Girl.set("age" , 17)
+Girl.set("course" , "web");
+
+// Get:-
+console.log(Girl.get("name"));
+console.log(Girl.get("age"));
+console.log(Girl.get("course"));
+
+// Has:-
+console.log(Girl.has("course"))
+
+// Delet:-
+console.log(Girl.delete("age"));
+
+console.log(Girl.size)
+
+//loop:-
+for(let [value,key] of Girl){
+  console.log(value , key)
+}
