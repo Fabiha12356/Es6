@@ -1587,3 +1587,21 @@ let secondOrder = () =>{
 
 let show = firstOrder(secondOrder);
 show()()();
+
+
+//Ternary Operator:-
+
+let user11 = +prompt("how old are you ?");
+let user12 = +prompt("choose one NO")
+
+
+
+let bet = (user11 >= 20) ? "Adults" : (user11 > 12 && user11 < 19) ? "Teenger" : "Childhood";
+// console.log(bet);
+alert(`${bet}`);
+
+
+let show01 = (user12 === 7) ? "you got laptop" : (user12 > 0 && user12 < 7) ? "you got toys" :
+(user12 > 10 && user12 < 19) ? "you got Iphone" : "you got slap😂"
+
+alert(`${show01}`);
