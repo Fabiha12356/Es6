@@ -1591,17 +1591,47 @@ show()()();
 
 //Ternary Operator:-
 
-let user11 = +prompt("how old are you ?");
-let user12 = +prompt("choose one NO")
+// let user11 = +prompt("how old are you ?");
+// let user12 = +prompt("choose one NO")
 
 
 
-let bet = (user11 >= 20) ? "Adults" : (user11 > 12 && user11 < 19) ? "Teenger" : "Childhood";
-// console.log(bet);
-alert(`${bet}`);
+// let bet = (user11 >= 20) ? "Adults" : (user11 > 12 && user11 < 19) ? "Teenger" : "Childhood";
+// // console.log(bet);
+// alert(`${bet}`);
 
 
-let show01 = (user12 === 7) ? "you got laptop" : (user12 > 0 && user12 < 7) ? "you got toys" :
-(user12 > 10 && user12 < 19) ? "you got Iphone" : "you got slap😂"
+// let show01 = (user12 === 7) ? "you got laptop" : (user12 > 0 && user12 < 7) ? "you got toys" :
+// (user12 > 10 && user12 < 19) ? "you got Iphone" : "you got slap😂"
 
-alert(`${show01}`);
+// alert(`${show01}`);
+
+
+// Nullish Operator:-
+
+let favrtism = {
+  color : "Red",
+  Dish : "Biryani",
+  Car : "BMW",
+  hobby :{
+    hobby1 : "sleep",
+    hobby2 : "scroll"
+  }
+}
+
+console.log(favrtism.color);
+console.log(favrtism?.hobby?.hobby1?.hobby2?.hobby3?.hobby4);
+
+
+let myPortfolio = {
+  name : "fabiha",
+  f_nmae : "Sohail",
+  class : 11,
+  city : "Karachi",
+  otherinfo : {
+    address: "5/f new karachi!",
+    age : 17,
+  }
+}
+
+console.log(myPortfolio?. otherinfo ?. address )
