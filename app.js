@@ -1547,4 +1547,43 @@ console.log(multiply);
 let filter = Assendorder.filter((num) =>{
 return num > 10
 })
-console.log(filter)
+console.log(filter);
+
+
+//Higher Order Function:-
+
+let firstOrder = (callback) =>{
+  console.log("ye 1st order hai");
+  callback();
+
+  //iner
+function inner (innermost){
+console.log("this is iner function");
+innerMost();
+}
+
+//innermost
+function innerMost (){
+console.log("this is inerMost function");
+}
+inner(innerMost)
+
+//return 
+return function(){
+  console.log("hello return")
+   return function name (){
+   console.log("fabihaa") 
+
+   return function age (){
+    console.log("my 17")
+   }
+  }
+}
+}
+
+let secondOrder = () =>{
+   console.log("ye 2nd order hai")
+}
+
+let show = firstOrder(secondOrder);
+show()()();
