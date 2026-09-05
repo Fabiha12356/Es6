@@ -1440,3 +1440,111 @@ console.log(Girl.size)
 for(let [value,key] of Girl){
   console.log(value , key)
 }
+
+
+
+//ARRAY METHODS:-
+
+
+// some:-
+
+
+let Cout = [1,2,3,9];
+let drak = ["blue", "black"]
+
+Cout.some((num)=>{
+if(num > 1){
+  console.log(num);
+}
+})
+let ColorsCheck = drak.some((color) =>{
+  return color.includes("blue")
+})
+console.log(ColorsCheck);
+
+
+// Every:-
+
+Cout.every((num) =>{
+if(num > 0){
+  console.log(num);
+}
+})
+
+
+let Check = Cout.every((num) =>{
+   return num < 10
+})
+console.log(Check)
+
+
+//find
+
+let find = Cout.find((num) =>{
+ num > 3
+})
+
+console.log(find);
+
+
+//Reducer:-
+
+let value0 = [10,20,30,40,50];
+
+let Calculate = value0.reduce((accumlator,currentValue) =>{
+  return value0 = accumlator + currentValue
+})
+
+console.log(Calculate);
+
+
+//Sort:-
+
+let Ours = ["fabiha" , "areeba" , "hamna"];
+let Assendorder = [2,10,7,9,22]
+
+//sequence:-
+console.log(Ours.sort());
+console.log(Assendorder.sort());
+
+
+let seq = Assendorder.sort((a , b) =>{
+ return a - b
+})
+console.log(seq);
+
+
+//map ;
+
+
+let divide = Assendorder.map((num) =>{
+return num / 2 
+})
+console.log(divide);
+
+
+let Add = Assendorder.map((num) =>{
+return num + 2
+})
+console.log(Add);
+
+
+let Sub = Assendorder.map((num) =>{
+return num - 1
+})
+console.log(Sub);
+
+let multiply = Assendorder.map((num) =>{
+return num * 10
+})
+console.log(multiply);
+
+
+
+//filter:-
+//condition base:-
+
+let filter = Assendorder.filter((num) =>{
+return num > 10
+})
+console.log(filter)
