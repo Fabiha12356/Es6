@@ -1634,4 +1634,27 @@ let myPortfolio = {
   }
 }
 
-console.log(myPortfolio?. otherinfo ?. address )
+console.log(myPortfolio?. otherinfo ?. address );
+
+
+// Exponentiation Operator:-
+
+let power = 2** 3
+console.log(power)
+console.log(4**2)
+console.log(5**2)
+console.log(6**2)
+console.log(7**2)
+console.log(8**2)
+console.log(9**2)
+console.log(10**2)
+
+
+//method of exponent :-
+
+console.log(Math.pow(2,3))
+console.log(Math.pow(3,3))
+console.log(Math.pow(4,3))
+console.log(Math.pow(5,3))
+console.log(Math.pow(6,3))
+console.log(Math.pow(7,3))
